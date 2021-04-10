@@ -50,9 +50,9 @@
 <h3>Use</h3>
 <br />
 <h3>Post Importer:</h3>
-<div>Config your server to run 'php artisan schedule:run' every minute OR Execute in command line </div>
+<div>Config your server to run 'php artisan schedule:run' every minute OR Execute in terminal </div>
 <br />
 <blockquote>
-<div>'php artisan GetExternalPosts'</div>
+<div>php artisan GetExternalPosts</div>
 </blockquote>
 </div>
