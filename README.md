@@ -12,8 +12,8 @@
 <h3>Installation</h3>
 <h4>-&gt; Open terminal:</h4>
 <ol>
-<li>git clone https://github.com/nicohs103/laravel-8-with-docker</li>
-<li>cd laravel-8-with-docker</li>
+<li>git clone https://github.com/nicohs103/blog8</li>
+<li>cd blog8</li>
 <li>cp .env.example .env</li>
 <li>composer install</li>
 <li>./vendor/bin/sail up</li>
@@ -50,9 +50,9 @@
 <h3>Use</h3>
 <br />
 <h3>Post Importer:</h3>
-<div>Config your server to run 'php artisan schedule:run' every minute OR</div>
+<div>Config your server to run 'php artisan schedule:run' every minute OR Execute in command line </div>
 <br />
 <blockquote>
-<div>Execute in command line 'php artisan GetExternalPosts'</div>
+<div>'php artisan GetExternalPosts'</div>
 </blockquote>
 </div>
