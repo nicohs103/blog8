@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'new' => 'new',
+    'create' => 'create',
+    'save' => 'save',
+    'created_successfully' => 'created successfully',
+    'title' => 'title',
+    'body' => 'body',
+    'image' => 'image',
+    'source' => 'source',
+    'edit_feed' => 'edit feed',
+    'not_found' => 'not found',
+    'updated_successfully' => 'updated successfully',
+    'deleted_successfully' => 'deleted successfully',
+    'saved_successfully' => 'saved successfully',
+    'home' => 'home',
+    'login' => 'login',
+    'register' => 'register',
+    'created_at' => 'created at',
+    'actions' => 'actions',
+    'name' => 'name',
+    'email' => 'email',
+    'password' => 'password',
+    'edit_user' => 'edit user',
+    'users' => 'users',
+];
