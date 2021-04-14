@@ -14,9 +14,10 @@
     </div>
     @endif
 
-    <div class="clearfix"></div>
+    <p class="text-center text-3xl sm:text-5xl lg:text-6xl leading-none font-extrabold text-gray-900 tracking-tight mb-8">{{ config('app.name', 'Laravel') }}</p>
 
-    <div class="w-3/4 my-20 px-20">
+
+    <div class="max-w-lg mx-auto">
         @foreach ($lastPosts as $post)
         <div class="my-10">
             <div class="text-lg">{{ trans('blog.title') }}: {{ $post->title }}</div>
@@ -29,6 +30,7 @@
             </div>
         </div>
         @endforeach
-    </div>
 
+        <div class="float-right w-48">{{ $lastPosts->links() }}</div>
+    </div>
 </x-guest-layout>

@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
-use Carbon\Carbon;
-
 
 class WelcomeController extends Controller
 {
@@ -16,8 +14,8 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        $lastPosts  = Post::with('user')->orderBy('id', 'DESC')->limit(10)->get();
-
-        return view('welcome', compact('lastPosts'));
+        return view('welcome', [
+            'lastPosts' => Post::with('user')->orderBy('id', 'DESC')->simplePaginate(10)
+        ]);
     }
 }
