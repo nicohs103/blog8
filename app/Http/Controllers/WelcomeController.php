@@ -16,10 +16,7 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        $today_start = Carbon::today()->startOfDay();
-        $today_end = Carbon::today()->endOfDay();
-
-        $lastPosts  = Post::whereBetween('publication_date', [$today_start, $today_end])->with('user')->get();
+        $lastPosts  = Post::with('user')->orderBy('id', 'DESC')->limit(10)->get();
 
         return view('welcome', compact('lastPosts'));
     }
