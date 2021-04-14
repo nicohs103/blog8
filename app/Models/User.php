@@ -69,7 +69,10 @@ class User extends Authenticatable
 
         static::created(function ($instance) {
             $role = Role::find(2);
-            $instance->roles()->save($role);
+
+            if (!empty($role)) {
+                $instance->roles()->save($role);
+            }
         });
     }
 
